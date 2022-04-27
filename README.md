@@ -4,6 +4,4 @@
 
 * Verónica Balsamo,
 
-* Lara García Pérez,
-
 * Leonor Pérez;
