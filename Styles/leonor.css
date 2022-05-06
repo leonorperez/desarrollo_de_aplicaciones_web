@@ -1,5 +1,5 @@
 body{
-    background-image: url("../images/leofondo.jpg");
+    background-image: url("../images/leo/leofondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -19,7 +19,10 @@ img{
 }
 footer{
     text-align: center;
-    background-color: rgb(78, 40, 250); 
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     color: aliceblue;
 }
 .link{
