@@ -7,12 +7,18 @@
 		
 	}
 
+	@font-face {
+		font-family:Autography;
+		src:url(fuentes/Autography.otf);
+		}
+		
 	body {
 		background: url('../img/bg.png');
 		background-size: cover;
 		background-attachment: fixed;
 		font-family:'Open Sans',Sans-serif, Arial, Helvetica;
 		background-color: #FFFCF7;
+		padding-bottom:60px;
 	}
 
 	a {	text-decoration: none;
@@ -37,16 +43,87 @@
 footer {
   background-color: black;
   position: absolute;
-  bottom: 0;
+  bottom: 100;
   width: 100%;
-  height: 40px;
+  height:60px; 
   color: white;
 }
-	
 
-	
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	list-style: none;
+  }
+  
+  .menu li {
+	width: 105px;
+	height: 50px;
+	transition: background-position-x 0.6s linear;
+	text-align: center;
+  }
+  .menu li a {
+	color: #212121;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.45s;
+  }
+  .menu li:hover {
+	background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+	-webkit-animation: line 1s;
+			animation: line 1s;
+  }
+  .menu li:hover a {
+	color: #d94f5c;
+  }
+  .menu li:not(:last-child) {
+	margin-right: 30px;
+  }
+  
+  @-webkit-keyframes line {
+	0% {
+	  background-position-x: 390px;
+	}
+  }
+  
+  @keyframes line {
+	0% {
+	  background-position-x: 390px;
+	}
+  }
 
+  
+	main {
+		display: flex;
+		flex-direction: row;
+	  }
+	  .item {
+		font-size: 1.5rem;
+		line-height: 1;
+		text-align: center;
+		padding: 3rem 1rem;
+		background: #faf3e5;
+		color:black;
+		margin: 6px;
+	  }
+	  .sidebar-left { 
+		order: 1;
+		flex: 1;
+		text-align: left;
+	  }
+	  article {
+		order: 2;
+		flex: 2;
+	  }
+	  .sidebar-right {
+		order: 3;
+		flex: 1;
+	  }
 
+	 
+
+	 
 
 
 	
