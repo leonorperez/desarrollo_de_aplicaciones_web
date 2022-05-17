@@ -44,6 +44,11 @@ img{
 }
 .img2{
     margin-top: 2%;
-    height: 450px;
-    width: 450px;
+    margin-left: 34%;
+    height: 400px;
+    width: 400px;
+}
+footer a:hover{
+    color: aliceblue;
+
 }
