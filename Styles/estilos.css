@@ -1,0 +1,31 @@
+
+#reloj{
+    font-family: sans-serif;
+    font-size: 60px;
+    text-shadow: 0px, 0px, 1px #333;
+    color: #ffffff;
+}
+
+.reloj-contenedor{
+    background-color: rgb(230, 79, 79);
+    padding: 25px;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.reloj-contenedor:hover{
+    background-color: rgb(91, 91, 241);
+}
+#fecha{
+    letter-spacing: 10px;
+    font-size: 15px;
+}
+.animar{
+    border: rgb(241, 240, 245) 0.5px solid;
+}
+body {   
+    min-height: 500px;
+    font-family: "helvetica neue";   
+}
