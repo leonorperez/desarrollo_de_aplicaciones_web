@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Styles/formulario.css" />
     <title>Formulario</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>FORMULARIO</h1>
     <h2>Vas a tener que responder estas preguntas!!</h2>
-    <p>
-        Cada pregunta suma 2 puntos, si respondes mal no sumas puntos!!
-    </p>
-    
-    <footer>
-        &#128512;Todos los derechos reservados &#128512;
-    </footer>
-    <script src="../js/formulario.js"></script>   
-</body>
+    <h2>Cada pregunta suma 2 puntos, si respondes mal no sumas puntos!!</h2>
+    <hr />
+
+    <form id="form" action="" method="post" target="_blank">
+      <p>
+        Pregunta número 1) Quién de las 3 tiene una foto con su gato?<br />
+
+        <input type="radio" name="fotogato" value="leonor" /> Leonor<br />
+
+        <input type="radio" name="fotogato" value="paula" /> Paula<br />
+
+        <input type="radio" name="fotogato" value="veronica" /> Verónica
+      </p>
+
+      <p>
+        Pregunta número 2) A que club va Leonor?<br />
+
+        <input type="radio" name="club" value="cervantes" /> Cervantes <br />
+
+        <input type="radio" name="club" value="paula" /> All Boys<br />
+
+        <input type="radio" name="club" value="veronica" /> Almagro
+      </p>
+
+      <p>
+        Pregunta número 3) Quién de las 3 tiene su blog con fondo verde?<br />
+
+        <input type="radio" name="fondo" value="leonor" /> Leonor <br />
+
+        <input type="radio" name="fondo" value="paula" /> Paula<br />
+
+        <input type="radio" name="fondo" value="veronica" /> Verónica
+      </p>
+
+      <p>
+        Pregunta número 4) En que barrio vive Paula?<br />
+
+        <input type="radio" name="barrio" value="balvanera" /> Balvanera <br />
+
+        <input type="radio" name="barrio" value="versalles" /> Versalles<br />
+
+        <input type="radio" name="barrio" value="Monte Castro" /> Monte Castro
+      </p>
+
+      <p>
+        Pregunta número 5) Cuál es el lugar preferido de vero?<br />
+
+        <input type="radio" name="lugar" value="playa" /> Playa con amigos y
+        familia <br />
+
+        <input type="radio" name="lugar" value="montaña" /> Las montañas
+        nevadas<br />
+
+        <input type="radio" name="lugar" value="terraza" /> Santa Terraza
+      </p>
+
+      <p><input type="submit" value="Enviar datos" /></p>
+    </form>
+    <hr />
+
+    <footer>&#128512;Todos los derechos reservados &#128512;</footer>
+    <script src="../js/formulario.js"></script>
+  </body>
 </html>
