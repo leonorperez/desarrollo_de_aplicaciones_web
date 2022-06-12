@@ -13,62 +13,67 @@
     <h2>Cada pregunta suma 2 puntos, si respondes mal no sumas puntos!!</h2>
     <hr />
 
-    <form id="form" action="" method="post" target="_blank">
+
+    <form id="form" name="fm">
       <p>
         Pregunta número 1) Quién de las 3 tiene una foto con su gato?<br />
 
-        <input type="radio" name="fotogato" value="leonor" /> Leonor<br />
+        <input type="radio" name="fotogato"  value=0 required /> Leonor<br />
 
-        <input type="radio" name="fotogato" value="paula" /> Paula<br />
+        <input type="radio" name="fotogato"  value=2 /> Paula<br />
 
-        <input type="radio" name="fotogato" value="veronica" /> Verónica
+        <input type="radio" name="fotogato"  value=0 /> Verónica
       </p>
 
       <p>
         Pregunta número 2) A que club va Leonor?<br />
 
-        <input type="radio" name="club" value="cervantes" /> Cervantes <br />
+        <input type="radio" name="club" value=2 required/> Cervantes <br />
 
-        <input type="radio" name="club" value="paula" /> All Boys<br />
+        <input type="radio" name="club" value=0 /> All Boys<br />
 
-        <input type="radio" name="club" value="veronica" /> Almagro
+        <input type="radio" name="club" value=0 /> Almagro
       </p>
 
       <p>
         Pregunta número 3) Quién de las 3 tiene su blog con fondo verde?<br />
 
-        <input type="radio" name="fondo" value="leonor" /> Leonor <br />
+        <input type="radio" name="fondo" value=0 required/> Leonor <br />
 
-        <input type="radio" name="fondo" value="paula" /> Paula<br />
+        <input type="radio" name="fondo" value=0 /> Paula<br />
 
-        <input type="radio" name="fondo" value="veronica" /> Verónica
+        <input type="radio" name="fondo" value=2 /> Verónica
       </p>
 
       <p>
         Pregunta número 4) En que barrio vive Paula?<br />
 
-        <input type="radio" name="barrio" value="balvanera" /> Balvanera <br />
+        <input type="radio" name="barrio" value=0 required/> Balvanera <br />
 
-        <input type="radio" name="barrio" value="versalles" /> Versalles<br />
+        <input type="radio" name="barrio" value=2 /> Versalles<br />
 
-        <input type="radio" name="barrio" value="Monte Castro" /> Monte Castro
+        <input type="radio" name="barrio" value=0 /> Monte Castro
       </p>
 
       <p>
         Pregunta número 5) Cuál es el lugar preferido de vero?<br />
 
-        <input type="radio" name="lugar" value="playa" /> Playa con amigos y
+        <input type="radio" name="lugar" value=2 required/> Playa con amigos y
         familia <br />
 
-        <input type="radio" name="lugar" value="montaña" /> Las montañas
+        <input type="radio" name="lugar" value=0 /> Las montañas
         nevadas<br />
 
-        <input type="radio" name="lugar" value="terraza" /> Santa Terraza
+        <input type="radio" name="lugar" value=0 /> Santa Terraza
       </p>
 
-      <p><input type="submit" value="Enviar datos" /></p>
+      <input type="submit" value="Enviar datos" onclick="validarDatos(event)">
     </form>
     <hr />
+
+
+<!-- aca es donde tendrias que mostrar la leyenda del puntaje -->
+    <h3 id="resultado"></h3>
 
     <footer>&#128512;Todos los derechos reservados &#128512;</footer>
     <script src="../js/formulario.js"></script>
