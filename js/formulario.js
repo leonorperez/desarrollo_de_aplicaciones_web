@@ -21,8 +21,14 @@ function validarDatos(e) {
 
   if (chequeado) {
     // aca manejarias el resultado del puntaje.
+    let mensaje = "El resultado es: " + resultado + " puntos.";
+    if (resultado == 10) {
+      mensaje += " ¡Felicitaciones! Obtuvo el puntaje máximo."
+    } else if (resultado <=2) {
+      mensaje += " Tomate un tiempo para ver nuestro blog y conocernos mejor. ¡Hasta pronto!"
+    }
     let h3 = document.getElementById("resultado");
-    h3.innerHTML = "El resultado es: " + resultado + " puntos.";
+    h3.innerHTML = mensaje;
        
     e.preventDefault();
   }
