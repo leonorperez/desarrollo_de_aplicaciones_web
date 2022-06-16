@@ -7,29 +7,30 @@
     <link rel="stylesheet" href="../Styles/login.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <title>Iniciar Sesión</title>
-	<script>    
-        function checkPassword(){
-            var password = document.getElementById("passwordBox");
-            var passwordText = password.value;
-            if (passwordText == "palabrasecreta"){
-                return true;
-            }
-            alert("Acceso denegado, contraseña incorrecta!");
-            return false;
-        }
-    </script>
-   
-    
   </head>
   <body>
     <h1>Increibles proyectos secretos</h1>
     <br>
     <h2>Por favor ingrese la password para ingresar al sitio web</h2>
     <br>
-    <p>Password:<input id ="passwordBox" type = "password"/> </p>
-    <br>
-    <a href="index.html" onClick ="return checkPassword()">Click para ingresar a nuestro sitio web</a>
-
-
+    <form id="formLogin">
+      <p>Password:<input id ="passwordBox" type="password"/> </p>
+      <br>
+      <a id="ingresar" href="#">Click para ingresar a nuestro sitio web</a>
+    </form>
+    <script type="text/javascript">
+      function checkPassword(e) {
+          var password = document.getElementById("passwordBox");
+          var passwordText = password.value;
+          if (passwordText == "palabrasecreta"){
+              window.location ="index.html"
+          } else {
+              alert("Acceso denegado, contraseña incorrecta!");
+          }
+          e.preventDefault();
+      }
+      document.getElementById("formLogin").addEventListener('submit', checkPassword)
+      document.getElementById("ingresar").addEventListener('click', checkPassword)
+  </script>
   </body>
 </html>
